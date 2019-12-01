@@ -30,11 +30,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vV0-cO-jfm">
-                                <rect key="frame" x="56" y="157" width="293" height="31"/>
+                                <rect key="frame" x="56" y="157" width="293" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="English"/>
+                                    <segment title="Spanish"/>
                                 </segments>
                                 <connections>
                                     <action selector="segTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="rvU-W0-DkX"/>

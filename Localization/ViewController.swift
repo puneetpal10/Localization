@@ -20,16 +20,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        lblFirst.text = "Surname".getLOCText()
+        lblFirst.text = "firstName".getLOCText()
+        btnFirst.setTitle("lang is \(ParameterName.language.getValueForKey() ?? "")", for: .normal)
+
     }
 
     @IBAction func segTapped(_ sender: UISegmentedControl ) {
         
         if(sender.selectedSegmentIndex == 0){
-            languageChange(strLan: "en")
             ParameterName.english.storeForKey(ParameterName.language)
                        languagePrefrences = ParameterName.english
-            lblFirst.text = "Surname".getLOCText()
+            lblFirst.text = "firstName".getLOCText()
 
         }else{
             ParameterName.spnanish.storeForKey(ParameterName.language)
@@ -38,7 +39,7 @@ class ViewController: UIViewController {
 //            UserDefaults.standard.set(["es"], forKey: "AppleLanguages")
 //                      UserDefaults.standard.synchronize()
 //            languageChange(strLan: "es")
-            lblFirst.text = "Surname".getLOCText()
+            lblFirst.text = "firstName".getLOCText()
 
         }
     }
